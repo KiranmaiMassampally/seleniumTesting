@@ -1,91 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-20T15:20:22 CDT" name="Surefire suite" finished-at="2025-05-20T15:20:34 CDT" duration-ms="11960">
+  <suite started-at="2025-05-20T16:48:55 CDT" name="Surefire suite" finished-at="2025-05-20T16:49:05 CDT" duration-ms="9929">
     <groups>
     </groups>
-    <test started-at="2025-05-20T15:20:22 CDT" name="Surefire test" finished-at="2025-05-20T15:20:34 CDT" duration-ms="11960">
+    <test started-at="2025-05-20T16:48:55 CDT" name="Surefire test" finished-at="2025-05-20T16:49:05 CDT" duration-ms="9929">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="SetupReport()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:21 CDT" name="SetupReport" finished-at="2025-05-20T15:20:22 CDT" duration-ms="1330" status="PASS">
+        <test-method is-config="true" signature="SetupReport()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:48:55 CDT" name="SetupReport" finished-at="2025-05-20T16:48:55 CDT" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupReport -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:22 CDT" name="SetUp" finished-at="2025-05-20T15:20:28 CDT" duration-ms="5986" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:48:55 CDT" name="SetUp" finished-at="2025-05-20T16:49:00 CDT" duration-ms="4846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestLoginWithWrongDetails()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:28 CDT" name="TestLoginWithWrongDetails" finished-at="2025-05-20T15:20:29 CDT" duration-ms="1073" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Just a moment...1223] but found [Just a moment...]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Just a moment...1223] but found [Just a moment...]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at tests.LoginTest.TestLoginWithWrongDetails(LoginTest.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TestLoginWithWrongDetails()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:00 CDT" name="TestLoginWithWrongDetails" finished-at="2025-05-20T16:49:01 CDT" duration-ms="1094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestLoginWithWrongDetails -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:29 CDT" name="tearDown" finished-at="2025-05-20T15:20:30 CDT" duration-ms="638" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:01 CDT" name="tearDown" finished-at="2025-05-20T16:49:01 CDT" duration-ms="205" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestLoginWithWrongDetails status=FAILURE method=LoginTest.TestLoginWithWrongDetails()[pri:0, instance:tests.LoginTest@c267ef4] output={null}]]]>
+                <![CDATA[[TestResult name=TestLoginWithWrongDetails status=SUCCESS method=LoginTest.TestLoginWithWrongDetails()[pri:0, instance:tests.LoginTest@c267ef4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:30 CDT" name="SetUp" finished-at="2025-05-20T15:20:32 CDT" duration-ms="2421" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:01 CDT" name="SetUp" finished-at="2025-05-20T16:49:04 CDT" duration-ms="2503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestValidLogin()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:32 CDT" name="TestValidLogin" finished-at="2025-05-20T15:20:33 CDT" duration-ms="1267" status="PASS">
+        <test-method signature="TestValidLogin()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:04 CDT" name="TestValidLogin" finished-at="2025-05-20T16:49:05 CDT" duration-ms="1009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:33 CDT" name="tearDown" finished-at="2025-05-20T15:20:34 CDT" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:05 CDT" name="tearDown" finished-at="2025-05-20T16:49:05 CDT" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,7 +49,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="TeardownReport()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T15:20:34 CDT" name="TeardownReport" finished-at="2025-05-20T15:20:34 CDT" duration-ms="513" status="PASS">
+        <test-method is-config="true" signature="TeardownReport()[pri:0, instance:tests.LoginTest@c267ef4]" started-at="2025-05-20T16:49:05 CDT" name="TeardownReport" finished-at="2025-05-20T16:49:05 CDT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownReport -->
